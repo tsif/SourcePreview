@@ -11,6 +11,8 @@
 		F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */; };
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
 		F3964AC21FFB93E100CA6A1C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC11FFB93E100CA6A1C /* Media.xcassets */; };
+		F3964AC61FFB9D1900CA6A1C /* prism.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.min.js */; };
+		F3964AC91FFB9D2C00CA6A1C /* prism.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC81FFB9D2C00CA6A1C /* prism.min.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F38DB20F1F3C546300896C80 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F38DB2111F3C546300896C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3964AC11FFB93E100CA6A1C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F3964AC51FFB9D1900CA6A1C /* prism.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.min.js; sourceTree = "<group>"; };
+		F3964AC81FFB9D2C00CA6A1C /* prism.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.min.css; path = "ql-swift/prism/styles/prism.min.css"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +77,19 @@
 		F3964AC41FFB95AF00CA6A1C /* prism */ = {
 			isa = PBXGroup;
 			children = (
+				F3964AC71FFB9D1C00CA6A1C /* styles */,
+				F3964AC51FFB9D1900CA6A1C /* prism.min.js */,
 			);
 			path = prism;
+			sourceTree = "<group>";
+		};
+		F3964AC71FFB9D1C00CA6A1C /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				F3964AC81FFB9D2C00CA6A1C /* prism.min.css */,
+			);
+			name = styles;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3964AC91FFB9D2C00CA6A1C /* prism.min.css in Resources */,
+				F3964AC61FFB9D1900CA6A1C /* prism.min.js in Resources */,
 				F3964AC21FFB93E100CA6A1C /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
