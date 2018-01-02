@@ -52,13 +52,29 @@
 		F38DB20A1F3C546300896C80 /* ql-swift */ = {
 			isa = PBXGroup;
 			children = (
+				F3964AC41FFB95AF00CA6A1C /* prism */,
+				F3964AC31FFB95A300CA6A1C /* assets */,
 				F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */,
 				F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */,
 				F38DB20F1F3C546300896C80 /* main.c */,
 				F38DB2111F3C546300896C80 /* Info.plist */,
-				F3964AC11FFB93E100CA6A1C /* Media.xcassets */,
 			);
 			path = "ql-swift";
+			sourceTree = "<group>";
+		};
+		F3964AC31FFB95A300CA6A1C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F3964AC11FFB93E100CA6A1C /* Media.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		F3964AC41FFB95AF00CA6A1C /* prism */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = prism;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
