@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3363BCE1FFD339900148B4F /* Regurgitator.m */; };
+		F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3363BD01FFD33AD00148B4F /* Regurgitator.h */; };
 		F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */; };
 		F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */; };
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3363BCE1FFD339900148B4F /* Regurgitator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Regurgitator.m; sourceTree = "<group>"; };
+		F3363BD01FFD33AD00148B4F /* Regurgitator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Regurgitator.h; sourceTree = "<group>"; };
 		F38DB2081F3C546300896C80 /* ql-swift.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ql-swift.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				F3964AC31FFB95A300CA6A1C /* assets */,
 				F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */,
 				F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */,
+				F3363BD01FFD33AD00148B4F /* Regurgitator.h */,
+				F3363BCE1FFD339900148B4F /* Regurgitator.m */,
 				F38DB20F1F3C546300896C80 /* main.c */,
 				F38DB2111F3C546300896C80 /* Info.plist */,
 			);
@@ -99,6 +105,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */,
 				F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */,
 				F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */,
 				F38DB2101F3C546300896C80 /* main.c in Sources */,
