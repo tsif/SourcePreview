@@ -9,25 +9,41 @@
 /* Begin PBXBuildFile section */
 		F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3363BCE1FFD339900148B4F /* Regurgitator.m */; };
 		F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3363BD01FFD33AD00148B4F /* Regurgitator.h */; };
-		F36C99F51FFFB6F0001F5748 /* prism.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F36C99F41FFFB6F0001F5748 /* prism.min.css */; };
+		F36C99F51FFFB6F0001F5748 /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F36C99F41FFFB6F0001F5748 /* prism.css */; };
+		F36C99FA1FFFBD74001F5748 /* SourceQL.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38DB2081F3C546300896C80 /* SourceQL.qlgenerator */; };
+		F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FD1FFFCFEE001F5748 /* swift_logo.png */; };
+		F36C9A001FFFDB34001F5748 /* page.html in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FF1FFFDB34001F5748 /* page.html */; };
 		F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */; };
 		F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */; };
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
-		F3964AC21FFB93E100CA6A1C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC11FFB93E100CA6A1C /* Media.xcassets */; };
-		F3964AC61FFB9D1900CA6A1C /* prism.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.min.js */; };
+		F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F36C99F91FFFBCEA001F5748 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				F36C99FA1FFFBD74001F5748 /* SourceQL.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F3363BCE1FFD339900148B4F /* Regurgitator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Regurgitator.m; sourceTree = "<group>"; };
 		F3363BD01FFD33AD00148B4F /* Regurgitator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Regurgitator.h; sourceTree = "<group>"; };
-		F36C99F41FFFB6F0001F5748 /* prism.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.min.css; path = SourceQL/prism/styles/prism.min.css; sourceTree = SOURCE_ROOT; };
+		F36C99F41FFFB6F0001F5748 /* prism.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.css; path = SourceQL/prism/styles/prism.css; sourceTree = SOURCE_ROOT; };
+		F36C99FD1FFFCFEE001F5748 /* swift_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift_logo.png; sourceTree = "<group>"; };
+		F36C99FF1FFFDB34001F5748 /* page.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = page.html; sourceTree = "<group>"; };
 		F38DB2081F3C546300896C80 /* SourceQL.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceQL.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		F38DB20F1F3C546300896C80 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F38DB2111F3C546300896C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3964AC11FFB93E100CA6A1C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		F3964AC51FFB9D1900CA6A1C /* prism.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.min.js; sourceTree = "<group>"; };
+		F3964AC51FFB9D1900CA6A1C /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +91,8 @@
 		F3964AC31FFB95A300CA6A1C /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				F3964AC11FFB93E100CA6A1C /* Media.xcassets */,
+				F36C99FD1FFFCFEE001F5748 /* swift_logo.png */,
+				F36C99FF1FFFDB34001F5748 /* page.html */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -84,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F3964AC71FFB9D1C00CA6A1C /* styles */,
-				F3964AC51FFB9D1900CA6A1C /* prism.min.js */,
+				F3964AC51FFB9D1900CA6A1C /* prism.js */,
 			);
 			path = prism;
 			sourceTree = "<group>";
@@ -92,7 +109,7 @@
 		F3964AC71FFB9D1C00CA6A1C /* styles */ = {
 			isa = PBXGroup;
 			children = (
-				F36C99F41FFFB6F0001F5748 /* prism.min.css */,
+				F36C99F41FFFB6F0001F5748 /* prism.css */,
 			);
 			name = styles;
 			path = "New Group";
@@ -120,6 +137,7 @@
 				F38DB2041F3C546300896C80 /* Frameworks */,
 				F38DB2051F3C546300896C80 /* Headers */,
 				F38DB2061F3C546300896C80 /* Resources */,
+				F36C99F91FFFBCEA001F5748 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -167,9 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F36C99F51FFFB6F0001F5748 /* prism.min.css in Resources */,
-				F3964AC61FFB9D1900CA6A1C /* prism.min.js in Resources */,
-				F3964AC21FFB93E100CA6A1C /* Media.xcassets in Resources */,
+				F36C99F51FFFB6F0001F5748 /* prism.css in Resources */,
+				F36C9A001FFFDB34001F5748 /* page.html in Resources */,
+				F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */,
+				F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
