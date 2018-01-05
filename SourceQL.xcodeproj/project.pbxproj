@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3363BCE1FFD339900148B4F /* Regurgitator.m */; };
 		F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3363BD01FFD33AD00148B4F /* Regurgitator.h */; };
+		F36C99F51FFFB6F0001F5748 /* prism.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F36C99F41FFFB6F0001F5748 /* prism.min.css */; };
 		F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */; };
 		F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */; };
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
 		F3964AC21FFB93E100CA6A1C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC11FFB93E100CA6A1C /* Media.xcassets */; };
 		F3964AC61FFB9D1900CA6A1C /* prism.min.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.min.js */; };
-		F3964AC91FFB9D2C00CA6A1C /* prism.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC81FFB9D2C00CA6A1C /* prism.min.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3363BCE1FFD339900148B4F /* Regurgitator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Regurgitator.m; sourceTree = "<group>"; };
 		F3363BD01FFD33AD00148B4F /* Regurgitator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Regurgitator.h; sourceTree = "<group>"; };
-		F38DB2081F3C546300896C80 /* ql-swift.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ql-swift.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36C99F41FFFB6F0001F5748 /* prism.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.min.css; path = SourceQL/prism/styles/prism.min.css; sourceTree = SOURCE_ROOT; };
+		F38DB2081F3C546300896C80 /* SourceQL.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceQL.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		F38DB20F1F3C546300896C80 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F38DB2111F3C546300896C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3964AC11FFB93E100CA6A1C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		F3964AC51FFB9D1900CA6A1C /* prism.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.min.js; sourceTree = "<group>"; };
-		F3964AC81FFB9D2C00CA6A1C /* prism.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.min.css; path = "ql-swift/prism/styles/prism.min.css"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		F38DB1FE1F3C546300896C80 = {
 			isa = PBXGroup;
 			children = (
-				F38DB20A1F3C546300896C80 /* ql-swift */,
+				F38DB20A1F3C546300896C80 /* SourceQL */,
 				F38DB2091F3C546300896C80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		F38DB2091F3C546300896C80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F38DB2081F3C546300896C80 /* ql-swift.qlgenerator */,
+				F38DB2081F3C546300896C80 /* SourceQL.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F38DB20A1F3C546300896C80 /* ql-swift */ = {
+		F38DB20A1F3C546300896C80 /* SourceQL */ = {
 			isa = PBXGroup;
 			children = (
 				F3964AC41FFB95AF00CA6A1C /* prism */,
@@ -69,7 +69,7 @@
 				F38DB20F1F3C546300896C80 /* main.c */,
 				F38DB2111F3C546300896C80 /* Info.plist */,
 			);
-			path = "ql-swift";
+			path = SourceQL;
 			sourceTree = "<group>";
 		};
 		F3964AC31FFB95A300CA6A1C /* assets */ = {
@@ -92,7 +92,7 @@
 		F3964AC71FFB9D1C00CA6A1C /* styles */ = {
 			isa = PBXGroup;
 			children = (
-				F3964AC81FFB9D2C00CA6A1C /* prism.min.css */,
+				F36C99F41FFFB6F0001F5748 /* prism.min.css */,
 			);
 			name = styles;
 			path = "New Group";
@@ -112,9 +112,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F38DB2071F3C546300896C80 /* ql-swift */ = {
+		F38DB2071F3C546300896C80 /* SourceQL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "ql-swift" */;
+			buildConfigurationList = F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "SourceQL" */;
 			buildPhases = (
 				F38DB2031F3C546300896C80 /* Sources */,
 				F38DB2041F3C546300896C80 /* Frameworks */,
@@ -125,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = "ql-swift";
+			name = SourceQL;
 			productName = "ql-swift";
-			productReference = F38DB2081F3C546300896C80 /* ql-swift.qlgenerator */;
+			productReference = F38DB2081F3C546300896C80 /* SourceQL.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "ql-swift" */;
+			buildConfigurationList = F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "SourceQL" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F38DB2071F3C546300896C80 /* ql-swift */,
+				F38DB2071F3C546300896C80 /* SourceQL */,
 			);
 		};
 /* End PBXProject section */
@@ -167,7 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3964AC91FFB9D2C00CA6A1C /* prism.min.css in Resources */,
+				F36C99F51FFFB6F0001F5748 /* prism.min.css in Resources */,
 				F3964AC61FFB9D1900CA6A1C /* prism.min.js in Resources */,
 				F3964AC21FFB93E100CA6A1C /* Media.xcassets in Resources */,
 			);
@@ -283,7 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "ql-swift/Info.plist";
+				INFOPLIST_FILE = SourceQL/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_BUNDLE_IDENTIFIER = "tsif.ql-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "ql-swift/Info.plist";
+				INFOPLIST_FILE = SourceQL/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_BUNDLE_IDENTIFIER = "tsif.ql-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "ql-swift" */ = {
+		F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "SourceQL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F38DB2121F3C546300896C80 /* Debug */,
@@ -315,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "ql-swift" */ = {
+		F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "SourceQL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F38DB2151F3C546300896C80 /* Debug */,
