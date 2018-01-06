@@ -41,19 +41,12 @@ NSData *regurgitateHTML(NSURL* url)
                                                     encoding:NSUTF8StringEncoding
                                                        error:nil];
     
-    NSString *html = [NSString stringWithFormat:@"<!DOCTYPE html>"
-                      "<html>"
-                      "<head>"
-                      "<style>*{margin:0;padding:0;font-size:95%%;}body{background-image: url(\"data:image/jpg;base64,%@\");}%@</style>"
-                      "</head>"
-                      "<body>"
-                      "<div class=\"page-header\">"
-                      "<h1>swift</h1>"
-                      "</div>"
-                      "<pre><code class=\"language-javascript\">%@</code></pre>"
-                      "<script>%@</script>"
-                      "</body>"
-                      "</html>",
+    NSString *htmlPath = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] pathForResource:@"page.html" ofType:nil];
+    NSString *htmlContent = [NSString stringWithContentsOfFile:htmlPath
+                                                    encoding:NSUTF8StringEncoding
+                                                       error:nil];
+    
+    NSString *html = [NSString stringWithFormat:htmlContent,
                       base64Image,
                       cssContent,
                       [NSString stringWithCString:source.UTF8String encoding:NSUTF8StringEncoding],
