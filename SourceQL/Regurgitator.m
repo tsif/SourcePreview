@@ -4,6 +4,19 @@
 
 #import "Regurgitator.h"
 
+NSImage *imageTintedWithColor(NSImage *original, NSColor *tint)
+{
+    NSImage *image = [original copy];
+    if (tint) {
+        [image lockFocus];
+        [tint set];
+        NSRect imageRect = {NSZeroPoint, [image size]};
+        NSRectFillUsingOperation(imageRect, NSCompositingOperationSourceAtop);
+        [image unlockFocus];
+    }
+    return image;
+}
+
 NSString *imageToNSString(NSImage *image)
 {
     NSData *imageData = [image TIFFRepresentation];
@@ -28,7 +41,7 @@ NSData *regurgitateHTML(NSURL* url)
     }
     
     NSURL *imageURL = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] URLForResource:@"swift_logo" withExtension:@"png"];
-    NSImage *image = [[NSImage alloc] initWithContentsOfURL:imageURL];
+    NSImage *image = imageTintedWithColor([[NSImage alloc] initWithContentsOfURL:imageURL], [NSColor colorWithWhite:1.0f alpha:0.95f]);
     NSString *base64Image = imageToNSString(image);
     
     NSString *cssPath = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] pathForResource:@"prism.css" ofType:nil];
@@ -49,6 +62,7 @@ NSData *regurgitateHTML(NSURL* url)
     NSString *html = [NSString stringWithFormat:htmlContent,
                       base64Image,
                       cssContent,
+                      url.absoluteString,
                       [NSString stringWithCString:source.UTF8String encoding:NSUTF8StringEncoding],
                       jsContent];
     

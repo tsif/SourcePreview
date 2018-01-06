@@ -3,23 +3,52 @@
     <head>
       <style>
           * {
-              margin:0;
-              padding:0;
-              font-size:95%%;
+            margin:0;
+            padding:0;
+            font-size:95%%;
+          }
 
+          body, html {
+            height: 100%;
+            margin: 0;
+          }
+
+          .page-header {
+            padding-bottom:20px;
+            margin:18px 0;
+            border-bottom:5px;
+            solid #eee;
+            background-color:#f64222;
+            padding:10px 20px 10px;
+            margin:0px 0px 20px;
+            font-family:Arial Black;
+            color:White;
+            font-size: 15px;
+          }
+
+          .page-header h1 {
+            line-height:1.5
           }
 
           body {
-              background-image: url("data:image/jpg;base64,%@");
+            /* The image used */
+            background-image: url("data:image/jpg;base64,%@");
 
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
           }
-
           %@
       </style>
     </head>
     <body>
+      <div class="bg"></div>
       <div class="page-header">
-        <h1>swift</h1>
+        <h1>%@</h1>
       </div>
       <p></p>
       <pre>
