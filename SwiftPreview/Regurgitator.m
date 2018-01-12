@@ -59,11 +59,13 @@ NSData *regurgitateHTML(NSURL* url)
                                                     encoding:NSUTF8StringEncoding
                                                        error:nil];
     
+    NSString *swift = [NSString stringWithCString:source.UTF8String encoding:NSUTF8StringEncoding];
+    
     NSString *html = [NSString stringWithFormat:htmlContent,
                       base64Image,
                       cssContent,
                       url.absoluteString,
-                      [NSString stringWithCString:source.UTF8String encoding:NSUTF8StringEncoding],
+                      swift,
                       jsContent];
     
     return [html dataUsingEncoding:NSUTF8StringEncoding];
