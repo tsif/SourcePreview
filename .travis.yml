@@ -1,2 +1,5 @@
 os: osx
 language: objective-c
+branches:
+  only:
+  - master

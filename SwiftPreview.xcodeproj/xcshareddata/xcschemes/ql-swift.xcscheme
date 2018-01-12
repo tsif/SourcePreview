@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F38DB2071F3C546300896C80"
-               BuildableName = "SourceQL.qlgenerator"
-               BlueprintName = "SourceQL"
-               ReferencedContainer = "container:SourceQL.xcodeproj">
+               BuildableName = "SwiftPreview.qlgenerator"
+               BlueprintName = "SwiftPreview"
+               ReferencedContainer = "container:SwiftPreview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F38DB2071F3C546300896C80"
-            BuildableName = "SourceQL.qlgenerator"
-            BlueprintName = "SourceQL"
-            ReferencedContainer = "container:SourceQL.xcodeproj">
+            BuildableName = "SwiftPreview.qlgenerator"
+            BlueprintName = "SwiftPreview"
+            ReferencedContainer = "container:SwiftPreview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F38DB2071F3C546300896C80"
-            BuildableName = "SourceQL.qlgenerator"
-            BlueprintName = "SourceQL"
-            ReferencedContainer = "container:SourceQL.xcodeproj">
+            BuildableName = "SwiftPreview.qlgenerator"
+            BlueprintName = "SwiftPreview"
+            ReferencedContainer = "container:SwiftPreview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
