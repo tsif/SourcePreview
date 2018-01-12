@@ -40,21 +40,21 @@ NSData *regurgitateHTML(NSURL* url)
         NSLog(@"Failed to determine encoding for file %@", [url path]);
     }
     
-    NSURL *imageURL = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] URLForResource:@"swift_logo" withExtension:@"png"];
+    NSURL *imageURL = [[NSBundle bundleWithIdentifier:@"tsif.swift-preview"] URLForResource:@"swift_logo" withExtension:@"png"];
     NSImage *image = imageTintedWithColor([[NSImage alloc] initWithContentsOfURL:imageURL], [NSColor colorWithWhite:1.0f alpha:0.95f]);
     NSString *base64Image = imageToNSString(image);
     
-    NSString *cssPath = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] pathForResource:@"prism.css" ofType:nil];
+    NSString *cssPath = [[NSBundle bundleWithIdentifier:@"tsif.swift-preview"] pathForResource:@"prism.css" ofType:nil];
     NSString *cssContent = [NSString stringWithContentsOfFile:cssPath
                                                      encoding:NSUTF8StringEncoding
                                                         error:nil];
     
-    NSString *jsPath = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] pathForResource:@"prism.js" ofType:nil];
+    NSString *jsPath = [[NSBundle bundleWithIdentifier:@"tsif.swift-preview"] pathForResource:@"prism.js" ofType:nil];
     NSString *jsContent = [NSString stringWithContentsOfFile:jsPath
                                                     encoding:NSUTF8StringEncoding
                                                        error:nil];
     
-    NSString *htmlPath = [[NSBundle bundleWithIdentifier:@"tsif.ql-swift"] pathForResource:@"page.html" ofType:nil];
+    NSString *htmlPath = [[NSBundle bundleWithIdentifier:@"tsif.swift-preview"] pathForResource:@"page.html" ofType:nil];
     NSString *htmlContent = [NSString stringWithContentsOfFile:htmlPath
                                                     encoding:NSUTF8StringEncoding
                                                        error:nil];
