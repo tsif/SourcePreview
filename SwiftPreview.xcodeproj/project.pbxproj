@@ -17,6 +17,8 @@
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
 		F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.js */; };
 		F3EB3EE02008BDA400CD705D /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F3EB3EDF2008BDA400CD705D /* prism.css */; };
+		F3EB3EE22008C13E00CD705D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3EB3EE12008C13D00CD705D /* LICENSE.txt */; };
+		F3EB3EE42008C14400CD705D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F3EB3EE32008C14400CD705D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,8 @@
 		F38DB2111F3C546300896C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3964AC51FFB9D1900CA6A1C /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.js; sourceTree = "<group>"; };
 		F3EB3EDF2008BDA400CD705D /* prism.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.css; path = SwiftPreview/prism/styles/prism.css; sourceTree = SOURCE_ROOT; };
+		F3EB3EE12008C13D00CD705D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F3EB3EE32008C14400CD705D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			children = (
 				F3964AC71FFB9D1C00CA6A1C /* styles */,
 				F3964AC51FFB9D1900CA6A1C /* prism.js */,
+				F3EB3EE12008C13D00CD705D /* LICENSE.txt */,
+				F3EB3EE32008C14400CD705D /* README.md */,
 			);
 			path = prism;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EB3EE42008C14400CD705D /* README.md in Resources */,
 				F3EB3EE02008BDA400CD705D /* prism.css in Resources */,
 				F36C9A001FFFDB34001F5748 /* page.html in Resources */,
 				F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */,
+				F3EB3EE22008C13E00CD705D /* LICENSE.txt in Resources */,
 				F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
