@@ -3,3 +3,5 @@ language: objective-c
 branches:
   only:
   - master
+notifications:
+  on_success: never
