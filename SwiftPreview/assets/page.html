@@ -14,12 +14,32 @@
           margin: 0;
         }
 
+        body {
+          /* The image used */
+          background-image: url("data:image/jpg;base64,%@");
+          background: transparent;
+          position: relative;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
         .page-header {
           background: white;
           padding: 50px 0;
           font-family: "-apple-system", helvetica, sans-serif;
           letter-spacing: 0.2px;
           position: relative;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 10000px;
+          z-index: 10;
+          display: block;
+          -webkit-box-shadow: 0px 5px 20px -2px rgba(107, 107, 107, 0.17);
+          box-shadow: 0px 5px 20px -2px rgba(107, 107, 107, 0.17);
         }
 
         .page-header h1 {
@@ -34,9 +54,13 @@
         }
 
         p {
+          position: fixed;
+          top: 123px;
+          display: block;
           height: 2px;
-          width: 100%;
+          width: 10000px;
           background: -webkit-linear-gradient(top left, #fe3627, #fcae3f );
+          z-index: 11;
         }
 
         #rcorners2 {
@@ -44,33 +68,98 @@
         }
 
         #rcorners2 pre {
-          padding: 50px 50px 0;
+          padding: 170px 50px 0 100px;
         }
 
-        body {
-          /* The image used */
-          background-image: url("data:image/jpg;base64,%@");
-          background: transparent;
+        %@
 
-          /* Center and scale the image nicely */
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
+        pre[class*="language-"] {
+            background-color:#ffffff;
         }
 
-          %@
+        pre.line-numbers {
+        	position: relative;
+        	padding-left: 50px;
+        	counter-reset: linenumber;
+        }
+
+        pre.line-numbers > code {
+        	position: relative;
+          white-space: inherit;
+        }
+
+        .line-numbers .line-numbers-rows {
+        	position: absolute;
+        	pointer-events: none;
+        	top: 0;
+        	font-size: 100%;
+        	left: -50px;
+        	width: 3em; /* works for line-numbers below 1000 lines */
+        	letter-spacing: -1px;
+        	border-right: 1px solid #b8b8b8;
+          margin-right: 20px;
+
+        	-webkit-user-select: none;
+        	-moz-user-select: none;
+        	-ms-user-select: none;
+        	user-select: none;
+
+        }
+
+      	.line-numbers-rows > span {
+      		pointer-events: none;
+      		display: block;
+      		counter-increment: linenumber;
+      	}
+
+    		.line-numbers-rows > span:before {
+    			content: counter(linenumber);
+    			color: #999;
+    			display: block;
+    			padding-right: 20px;
+    			text-align: right;
+    		}
+
+        .toolbar .toolbar-item:first-of-type {
+          display: none;
+        }
+
+        .toolbar .toolbar-item a {
+          font-family: "-apple-system", helvetica, sans-serif;
+          font-size: 12px;
+          font-weight: 200;
+          position: fixed;
+          top: 42px;
+          right: 50px;
+          padding: 10px 20px;
+          display: inline-block;
+          color: white;
+          background: -webkit-linear-gradient(top left, #fe3627, #fcae3f );
+          border-radius: 4px;
+          transition: all .2s ease-in-out;
+          z-index: 11;
+        }
+
+        .toolbar .toolbar-item a:hover {
+          transform: scale(1.1);
+        }
+
+        .toolbar .toolbar-item a:active {
+          transform: scale(0.8);
+        }
+
+
       </style>
     </head>
     <body>
       <div class="bg"></div>
       <div class="page-header">
         <h1>%@</h1>
+        <p></p>
       </div>
-      <p></p>
+
       <div id="rcorners2">
-        <pre class="line-numbers">
-          <code class="language-swift">%@</code>
-        </pre>
+        <pre class="line-numbers"><code class="language-swift">%@</code></pre>
       </div>
 
       <script>%@</script>
