@@ -12,11 +12,11 @@
 		F36C99FA1FFFBD74001F5748 /* SwiftPreview.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */; };
 		F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FD1FFFCFEE001F5748 /* swift_logo.png */; };
 		F36C9A001FFFDB34001F5748 /* page.html in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FF1FFFDB34001F5748 /* page.html */; };
+		F385338920C1132F0056AAD6 /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F385338820C1132F0056AAD6 /* prism.css */; };
 		F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */; };
 		F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */; };
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
 		F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.js */; };
-		F3EB3EE02008BDA400CD705D /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F3EB3EDF2008BDA400CD705D /* prism.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,13 +37,13 @@
 		F3363BD01FFD33AD00148B4F /* Regurgitator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Regurgitator.h; sourceTree = "<group>"; };
 		F36C99FD1FFFCFEE001F5748 /* swift_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift_logo.png; sourceTree = "<group>"; };
 		F36C99FF1FFFDB34001F5748 /* page.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = page.html; sourceTree = "<group>"; };
+		F385338820C1132F0056AAD6 /* prism.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.css; path = SourcePreview/prism/styles/prism.css; sourceTree = SOURCE_ROOT; };
 		F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPreview.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		F38DB20F1F3C546300896C80 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F38DB2111F3C546300896C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3964AC51FFB9D1900CA6A1C /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.js; sourceTree = "<group>"; };
-		F3EB3EDF2008BDA400CD705D /* prism.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.css; path = SwiftPreview/prism/styles/prism.css; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		F38DB1FE1F3C546300896C80 = {
 			isa = PBXGroup;
 			children = (
-				F38DB20A1F3C546300896C80 /* SwiftPreview */,
+				F38DB20A1F3C546300896C80 /* SourcePreview */,
 				F38DB2091F3C546300896C80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F38DB20A1F3C546300896C80 /* SwiftPreview */ = {
+		F38DB20A1F3C546300896C80 /* SourcePreview */ = {
 			isa = PBXGroup;
 			children = (
 				F3964AC41FFB95AF00CA6A1C /* prism */,
@@ -85,7 +85,7 @@
 				F38DB20F1F3C546300896C80 /* main.c */,
 				F38DB2111F3C546300896C80 /* Info.plist */,
 			);
-			path = SwiftPreview;
+			path = SourcePreview;
 			sourceTree = "<group>";
 		};
 		F3964AC31FFB95A300CA6A1C /* assets */ = {
@@ -109,7 +109,7 @@
 		F3964AC71FFB9D1C00CA6A1C /* styles */ = {
 			isa = PBXGroup;
 			children = (
-				F3EB3EDF2008BDA400CD705D /* prism.css */,
+				F385338820C1132F0056AAD6 /* prism.css */,
 			);
 			name = styles;
 			path = "New Group";
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "SwiftPreview" */;
+			buildConfigurationList = F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "SourcePreview" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,7 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EB3EE02008BDA400CD705D /* prism.css in Resources */,
+				F385338920C1132F0056AAD6 /* prism.css in Resources */,
 				F36C9A001FFFDB34001F5748 /* page.html in Resources */,
 				F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */,
 				F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */,
@@ -321,7 +321,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftPreview/Info.plist;
+				INFOPLIST_FILE = SourcePreview/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tsif.swift-preview";
@@ -337,7 +337,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftPreview/Info.plist;
+				INFOPLIST_FILE = SourcePreview/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tsif.swift-preview";
@@ -350,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "SwiftPreview" */ = {
+		F38DB2021F3C546300896C80 /* Build configuration list for PBXProject "SourcePreview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F38DB2121F3C546300896C80 /* Debug */,

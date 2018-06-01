@@ -15,7 +15,7 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
 {
-    CFDataRef data = (__bridge CFDataRef) regurgitateHTML((__bridge NSURL*) url);
+    CFDataRef data = (__bridge CFDataRef) regurgitateHTMLData((__bridge NSURL*) url);
     
     if (data)
     {
