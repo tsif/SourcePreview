@@ -81,47 +81,47 @@
         }
 
         pre.line-numbers {
-        	position: relative;
-        	padding-left: 50px;
-        	counter-reset: linenumber;
+            position: relative;
+            padding-left: 50px;
+            counter-reset: linenumber;
         }
 
         pre.line-numbers > code {
-        	position: relative;
+            position: relative;
           white-space: inherit;
         }
 
         .line-numbers .line-numbers-rows {
-        	position: absolute;
-        	pointer-events: none;
-        	top: 0;
-        	font-size: 100%;
-        	left: -50px;
-        	width: 3em;
-        	letter-spacing: -1px;
-        	border-right: 1px solid #b8b8b8;
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            font-size: 100%;
+            left: -50px;
+            width: 3em;
+            letter-spacing: -1px;
+            border-right: 1px solid #b8b8b8;
           margin-right: 20px;
 
-        	-webkit-user-select: none;
-        	-moz-user-select: none;
-        	-ms-user-select: none;
-        	user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
 
         }
 
-      	.line-numbers-rows > span {
-      		pointer-events: none;
-      		display: block;
-      		counter-increment: linenumber;
-      	}
+          .line-numbers-rows > span {
+              pointer-events: none;
+              display: block;
+              counter-increment: linenumber;
+          }
 
-    		.line-numbers-rows > span:before {
-    			content: counter(linenumber);
-    			color: #999;
-    			display: block;
-    			padding-right: 20px;
-    			text-align: right;
-    		}
+            .line-numbers-rows > span:before {
+                content: counter(linenumber);
+                color: #999;
+                display: block;
+                padding-right: 20px;
+                text-align: right;
+            }
 
         .toolbar .toolbar-item:first-of-type {
           display: none;
