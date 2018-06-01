@@ -31,21 +31,34 @@
           padding: 50px 0;
           font-family: "-apple-system", helvetica, sans-serif;
           letter-spacing: 0.2px;
-          position: relative;
           position: fixed;
           top: 0;
           left: 0;
-          width: 10000px;
+          width: 100vw;
           z-index: 10;
           display: block;
           -webkit-box-shadow: 0px 5px 20px -2px rgba(107, 107, 107, 0.17);
           box-shadow: 0px 5px 20px -2px rgba(107, 107, 107, 0.17);
         }
 
+        .page-header::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100vw;
+          height: 2px;
+          background: -webkit-linear-gradient(top left, #fe3627, #fcae3f );
+          z-index: 13;
+        }
+
         .page-header h1 {
           font-family: inherit;
           font-size: 16px;
           font-weight: bold;
+          width: calc(100vw - 270px);
+          overflow: hidden;
+          word-wrap: break-word;
           display: inline-block;
           background: -webkit-linear-gradient(top left, #fe3627, #fcae3f );
           -webkit-background-clip: text;
@@ -53,18 +66,8 @@
           padding: 0 50px;
         }
 
-        p {
-          position: fixed;
-          top: 117px;
-          display: block;
-          height: 2px;
-          width: 10000px;
-          background: -webkit-linear-gradient(top left, #fe3627, #fcae3f );
-          z-index: 11;
-        }
-
         #rcorners2 {
-          margin-bottom: 150px;
+          margin-bottom: 100px;
         }
 
         #rcorners2 pre {
@@ -78,47 +81,47 @@
         }
 
         pre.line-numbers {
-        	position: relative;
-        	padding-left: 50px;
-        	counter-reset: linenumber;
+            position: relative;
+            padding-left: 50px;
+            counter-reset: linenumber;
         }
 
         pre.line-numbers > code {
-        	position: relative;
+            position: relative;
           white-space: inherit;
         }
 
         .line-numbers .line-numbers-rows {
-        	position: absolute;
-        	pointer-events: none;
-        	top: 0;
-        	font-size: 100%;
-        	left: -50px;
-        	width: 3em; /* works for line-numbers below 1000 lines */
-        	letter-spacing: -1px;
-        	border-right: 1px solid #b8b8b8;
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            font-size: 100%;
+            left: -50px;
+            width: 3em;
+            letter-spacing: -1px;
+            border-right: 1px solid #b8b8b8;
           margin-right: 20px;
 
-        	-webkit-user-select: none;
-        	-moz-user-select: none;
-        	-ms-user-select: none;
-        	user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
 
         }
 
-      	.line-numbers-rows > span {
-      		pointer-events: none;
-      		display: block;
-      		counter-increment: linenumber;
-      	}
+          .line-numbers-rows > span {
+              pointer-events: none;
+              display: block;
+              counter-increment: linenumber;
+          }
 
-    		.line-numbers-rows > span:before {
-    			content: counter(linenumber);
-    			color: #999;
-    			display: block;
-    			padding-right: 20px;
-    			text-align: right;
-    		}
+            .line-numbers-rows > span:before {
+                content: counter(linenumber);
+                color: #999;
+                display: block;
+                padding-right: 20px;
+                text-align: right;
+            }
 
         .toolbar .toolbar-item:first-of-type {
           display: none;
