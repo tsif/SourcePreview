@@ -8,3 +8,5 @@ branches:
   - master
 notifications:
   on_success: never
+script:
+  - xcodebuild -project SourcePreview.xcodeproj -scheme SwiftPreview build
