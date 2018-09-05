@@ -18,14 +18,17 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
     NSStringEncoding usedEncoding = 0;
     NSError *readError = nil;
     
-    NSString *source = [NSString stringWithContentsOfURL:(__bridge NSURL*)url usedEncoding:&usedEncoding error:&readError];
+    NSString *source = [NSString stringWithContentsOfURL:(__bridge NSURL*)url
+                                            usedEncoding:&usedEncoding
+                                                   error:&readError];
     
     if (usedEncoding == 0) {
         NSLog(@"Failed to determine encoding for file %@", [(__bridge NSURL*)url path]);
         return noErr;
     }
     
-    source = [NSString stringWithCString:source.UTF8String encoding:NSUTF8StringEncoding];
+    source = [NSString stringWithCString:source.UTF8String
+                                encoding:NSUTF8StringEncoding];
     
     // Load water mark
     
