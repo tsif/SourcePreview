@@ -9,4 +9,4 @@ branches:
 notifications:
   on_success: never
 script:
-  - xcodebuild -project SourcePreview.xcodeproj -scheme SwiftPreview build
+  - xcodebuild clean -project SourcePreview.xcodeproj -scheme SwiftPreview build
