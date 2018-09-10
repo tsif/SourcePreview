@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F327F611214677330043E9A6 /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F385338820C1132F0056AAD6 /* prism.css */; };
 		F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3363BCE1FFD339900148B4F /* Regurgitator.m */; };
 		F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3363BD01FFD33AD00148B4F /* Regurgitator.h */; };
 		F36C99FA1FFFBD74001F5748 /* SwiftPreview.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */; };
@@ -16,7 +17,6 @@
 		F38DB20E1F3C546300896C80 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */; };
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
 		F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.js */; };
-		F3EB3EE02008BDA400CD705D /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F3EB3EDF2008BDA400CD705D /* prism.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -197,7 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EB3EE02008BDA400CD705D /* prism.css in Resources */,
+				F327F611214677330043E9A6 /* prism.css in Resources */,
 				F36C9A001FFFDB34001F5748 /* page.html in Resources */,
 				F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */,
 				F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */,
