@@ -10,7 +10,6 @@
 		F327F611214677330043E9A6 /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F385338820C1132F0056AAD6 /* prism.css */; };
 		F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3363BCE1FFD339900148B4F /* Regurgitator.m */; };
 		F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3363BD01FFD33AD00148B4F /* Regurgitator.h */; };
-		F36C99FA1FFFBD74001F5748 /* SourcePreview.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38DB2081F3C546300896C80 /* SourcePreview.qlgenerator */; };
 		F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FD1FFFCFEE001F5748 /* swift_logo.png */; };
 		F36C9A001FFFDB34001F5748 /* page.html in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FF1FFFDB34001F5748 /* page.html */; };
 		F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */; };
@@ -18,19 +17,6 @@
 		F38DB2101F3C546300896C80 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20F1F3C546300896C80 /* main.c */; };
 		F3964AC61FFB9D1900CA6A1C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = F3964AC51FFB9D1900CA6A1C /* prism.js */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F36C99F91FFFBCEA001F5748 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "~/Library/QuickLook";
-			dstSubfolderSpec = 0;
-			files = (
-				F36C99FA1FFFBD74001F5748 /* SourcePreview.qlgenerator in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F3363BCE1FFD339900148B4F /* Regurgitator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Regurgitator.m; sourceTree = "<group>"; };
@@ -137,7 +123,6 @@
 				F38DB2041F3C546300896C80 /* Frameworks */,
 				F38DB2051F3C546300896C80 /* Headers */,
 				F38DB2061F3C546300896C80 /* Resources */,
-				F36C99F91FFFBCEA001F5748 /* CopyFiles */,
 				F3EB3EDE2008B90E00CD705D /* ShellScript */,
 			);
 			buildRules = (
@@ -208,7 +193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -Rf \"~/Library/QuickLook/$FULL_PRODUCT_NAME\"\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" ~/Library/QuickLook\nqlmanage -r";
+			shellScript = "# Remove previous version if it exists\nrm -Rf \"~/Library/QuickLook/$FULL_PRODUCT_NAME\"\n\n# Copy the compiled version to the user QuickLook directory\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" ~/Library/QuickLook\n\n# Reset thumbnail disk cache\nqlmanage -r\n\n# Copy the compiled version to installer directory\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" \"$PROJECT_DIR/$PRODUCT_NAME/installer/files\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
