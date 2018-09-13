@@ -10,7 +10,7 @@
 		F327F611214677330043E9A6 /* prism.css in Resources */ = {isa = PBXBuildFile; fileRef = F385338820C1132F0056AAD6 /* prism.css */; };
 		F3363BCF1FFD339900148B4F /* Regurgitator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3363BCE1FFD339900148B4F /* Regurgitator.m */; };
 		F3363BD11FFD33AD00148B4F /* Regurgitator.h in Headers */ = {isa = PBXBuildFile; fileRef = F3363BD01FFD33AD00148B4F /* Regurgitator.h */; };
-		F36C99FA1FFFBD74001F5748 /* SwiftPreview.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */; };
+		F36C99FA1FFFBD74001F5748 /* SourcePreview.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38DB2081F3C546300896C80 /* SourcePreview.qlgenerator */; };
 		F36C99FE1FFFCFEE001F5748 /* swift_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FD1FFFCFEE001F5748 /* swift_logo.png */; };
 		F36C9A001FFFDB34001F5748 /* page.html in Resources */ = {isa = PBXBuildFile; fileRef = F36C99FF1FFFDB34001F5748 /* page.html */; };
 		F38DB20C1F3C546300896C80 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */; };
@@ -26,7 +26,7 @@
 			dstPath = "~/Library/QuickLook";
 			dstSubfolderSpec = 0;
 			files = (
-				F36C99FA1FFFBD74001F5748 /* SwiftPreview.qlgenerator in CopyFiles */,
+				F36C99FA1FFFBD74001F5748 /* SourcePreview.qlgenerator in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,13 +38,12 @@
 		F36C99FD1FFFCFEE001F5748 /* swift_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift_logo.png; sourceTree = "<group>"; };
 		F36C99FF1FFFDB34001F5748 /* page.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = page.html; sourceTree = "<group>"; };
 		F385338820C1132F0056AAD6 /* prism.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.css; path = SourcePreview/prism/styles/prism.css; sourceTree = SOURCE_ROOT; };
-		F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPreview.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38DB2081F3C546300896C80 /* SourcePreview.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourcePreview.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38DB20B1F3C546300896C80 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		F38DB20D1F3C546300896C80 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		F38DB20F1F3C546300896C80 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F38DB2111F3C546300896C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3964AC51FFB9D1900CA6A1C /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.js; sourceTree = "<group>"; };
-		F3EB3EDF2008BDA400CD705D /* prism.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = prism.css; path = SwiftPreview/prism/styles/prism.css; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,27 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F327F608213FE0DC0043E9A6 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				F3EB3EDF2008BDA400CD705D /* prism.css */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		F38DB1FE1F3C546300896C80 = {
 			isa = PBXGroup;
 			children = (
 				F38DB20A1F3C546300896C80 /* SourcePreview */,
 				F38DB2091F3C546300896C80 /* Products */,
-				F327F608213FE0DC0043E9A6 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
 		F38DB2091F3C546300896C80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */,
+				F38DB2081F3C546300896C80 /* SourcePreview.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,9 +129,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F38DB2071F3C546300896C80 /* SwiftPreview */ = {
+		F38DB2071F3C546300896C80 /* SourcePreview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "SwiftPreview" */;
+			buildConfigurationList = F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "SourcePreview" */;
 			buildPhases = (
 				F38DB2031F3C546300896C80 /* Sources */,
 				F38DB2041F3C546300896C80 /* Frameworks */,
@@ -154,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftPreview;
+			name = SourcePreview;
 			productName = "ql-swift";
-			productReference = F38DB2081F3C546300896C80 /* SwiftPreview.qlgenerator */;
+			productReference = F38DB2081F3C546300896C80 /* SourcePreview.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F38DB2071F3C546300896C80 /* SwiftPreview */,
+				F38DB2071F3C546300896C80 /* SourcePreview */,
 			);
 		};
 /* End PBXProject section */
@@ -369,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "SwiftPreview" */ = {
+		F38DB2141F3C546300896C80 /* Build configuration list for PBXNativeTarget "SourcePreview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F38DB2151F3C546300896C80 /* Debug */,
