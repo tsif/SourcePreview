@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/tsif/SourcePreview.svg?token=8ZyhMMGarwUGfCibCHGk&branch=master)](https://travis-ci.com/tsif/SourcePreview) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![version: 0.1.0](https://img.shields.io/badge/version-0.1.0-green.svg)
+[![Build Status](https://travis-ci.com/tsif/SourcePreview.svg?token=8ZyhMMGarwUGfCibCHGk&branch=master)](https://travis-ci.com/tsif/SourcePreview) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![version: 1.0.1](https://img.shields.io/badge/version-1.0.1-green.svg)
 
 # SourcePreview
 
@@ -20,7 +20,7 @@ Pick any of the methods below:
 
 - You can build an installer package yourself. Run the project at least once in xcode. Then, in a terminal, go to the `installer` folder located in the `SourcePreview` folder. Run the `build.sh` file. Running this command will create a `.pkg` file in the `compiled` folder. Double click on the `.pkg` and follow the prompts to install the plugin.
 
-- Download the latest [https://github.com/tsif/SourcePreview/releases/tag/1.0.1](release) from https://github.com/tsif/SourcePreview/releases. You can copy `SourcePreview.qlgenerator` into `~/Library/QuickLook` manually (run `qlmanage -r` once you do this) or you can run the installer package located here.
+- Download the latest [release](https://github.com/tsif/SourcePreview/releases/tag/1.0.1) from https://github.com/tsif/SourcePreview/releases. You can copy `SourcePreview.qlgenerator` into `~/Library/QuickLook` manually (run `qlmanage -r` once you do this) or you can run the installer package located here.
 
 ## Removal
 
