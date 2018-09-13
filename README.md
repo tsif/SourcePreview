@@ -16,11 +16,11 @@ design by Dimitris Niavis
 
 Pick any of the methods below:
 
-- You can run the `SourcePreview` scheme in xcode. A post build step copies into `SourcePreview.qlgenerator` into `~/Library/QuickLook` and you can start previewing swift files.
+- Once you clone this repo, you can run the `SourcePreview` scheme in xcode. A post build step copies `SourcePreview.qlgenerator` into `~/Library/QuickLook` and you can start previewing swift files.
 
-- You can build an installer package yourself. Run the project at least once in xcode. Then, in a terminal, go to the `installer` folder located in the `SourcePreview` folder. Run the `build.sh` file. Running this command will create a `.pgk` file in the `compiled`. Double click on the `.pkg` and follow the prompts to install the plugin.
+- You can build an installer package yourself. Run the project at least once in xcode. Then, in a terminal, go to the `installer` folder located in the `SourcePreview` folder. Run the `build.sh` file. Running this command will create a `.pkg` file in the `compiled` folder. Double click on the `.pkg` and follow the prompts to install the plugin.
 
-- Download the latest [](release) from https://github.com/tsif/SourcePreview/releases. You can copy `SourcePreview.qlgenerator` into `~/Library/QuickLook` manually (run `qlmanage -r` once you do this) or you can run installer package located here.
+- Download the latest [](release) from https://github.com/tsif/SourcePreview/releases. You can copy `SourcePreview.qlgenerator` into `~/Library/QuickLook` manually (run `qlmanage -r` once you do this) or you can run the installer package located here.
 
 ## Removal
 
