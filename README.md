@@ -14,7 +14,13 @@ design by Dimitris Niavis
 
 ## Installation
 
+- You can run the `SourcePreview` scheme in xcode. A post build step copies into `SourcePreview.qlgenerator` into `~/Library/QuickLook` and you can start previewing swift files.
+
+- You can run the installer package located in `/` by double clicking on it.
+
 ## Removal
+
+Drag `SourcePreview.qlgenerator` located in `~/Library/QuickLook` into the trash.
 
 ## License
 
