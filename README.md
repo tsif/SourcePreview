@@ -6,7 +6,7 @@ Quick look plugin for macOS for source code files in swift. Inspired by [QLMarkD
 
 by Dimitri James Tsiflitzis dimitrijam.es
 
-design by Dimitris Niavis 
+design by (Dimitris Niavis [https://niavis.design/])
 
 ![Alt Text](https://github.com/tsif/SourcePreview/blob/develop/SourcePreview/screenshots/preview.png)
 
