@@ -4,9 +4,9 @@
 
 Quick look plugin for macOS for source code files in swift. Inspired by [QLMarkDown](https://github.com/toland/qlmarkdown) and [QLSwift](https://github.com/lexrus/QLSwift). Source code is rendered by using [prism.js](https://prismjs.com/). Features include the ability to copy the source file to the clipboard and the display of line numbers in the preview.
 
-by [Dimitri James Tsiflitzis](https://dimitrijam.es/)
+written by [Dimitri James Tsiflitzis](https://dimitrijam.es/)
 
-design by [Dimitris Niavis](https://niavis.design/)
+designed by [Dimitris Niavis](https://niavis.design/)
 
 ![Alt Text](https://github.com/tsif/SourcePreview/blob/develop/SourcePreview/screenshots/preview.png)
 
